@@ -82,4 +82,14 @@ public class Run {
     public void setRaceType(String raceType){
         this.raceType = raceType;
     }
+
+    @Override
+    public String toString() {
+        return "Run{" +
+                "title='" + title + '\'' +
+                ", distance='" + distance + '\'' +
+                ", description='" + description + '\'' +
+                ", raceType='" + raceType + '\'' +
+                '}';
+    }
 }

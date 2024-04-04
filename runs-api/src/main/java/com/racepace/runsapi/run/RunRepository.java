@@ -12,4 +12,9 @@ public interface RunRepository
 
     @Query("SELECT r FROM Run r WHERE r.title =?1")
     Optional<Run> findRunByTitle(String title);
+
+    @Query("SELECT r FROM Run r WHERE r.id =?1")
+    Optional<Run> findRunById(Long id);
+
+
 }
